@@ -153,6 +153,8 @@
     *,*::before,*::after{animation:none!important;transition:none!important}
   }
 </style>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
 </head>
 <body>
 
@@ -614,5 +616,6 @@
   build();
 })();
 </script>
+<script>if('serviceWorker' in navigator){addEventListener('load',function(){navigator.serviceWorker.register('./sw.js').catch(function(){});});}</script>
 </body>
 </html>
